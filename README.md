@@ -32,7 +32,7 @@ Per clonare il progetto **FilterBot** e testarlo localmente, segui i seguenti pa
 
 - Assicurati di avere Git installato sul tuo sistema.
 
-- Python 3.6 o superiore.
+- Python 3.6 o superiore (fino a Python 3.11).
 
 - Le librerie telethon e python-telegram-bot==13.5.
 
