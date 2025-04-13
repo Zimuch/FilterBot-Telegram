@@ -34,7 +34,7 @@ Per clonare il progetto **FilterBot** e testarlo localmente, segui i seguenti pa
 
 - Python 3.6 o superiore.
 
-- Le librerie telethon e python-telegram-bot.
+- Le librerie telethon e python-telegram-bot==13.5.
 
 🔹 Clonazione del Repository
 
@@ -47,7 +47,7 @@ Per clonare il progetto **FilterBot** e testarlo localmente, segui i seguenti pa
 
 Installa le librerie necessarie con pip:
 
-    pip install telethon python-telegram-bot
+    pip install telethon python-telegram-bot==13.5
 
 ⚙️ Configurazione
 
