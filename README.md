@@ -137,14 +137,15 @@ Copia questo numero e usalo nella configurazione del bot
 - Questo ID è necessario affinché il bot sappia a chi inviare le notifiche quando trova corrispondenze con le parole chiave. Nel tuo codice, hai impostato che le notifiche vengano inviate solo al tuo account personale.
 
 - Modifica il file FilterBot.py per personalizzare i canali da monitorare e le parole chiave:
+   - Per inserire un canale ti basta aggiungere all'interno della variabile **channels** il canale pubblico (tra '')
+   - Per inserire una keyword ti basta aggiungere all'interno della variabile **keyword** la tua parola da ricercare (tra '')
 
-
-# Canali da monitorare (username, senza @)
+## Canali da monitorare (username, senza @)
 channels = [
     'canale1', 'canale2', 'canale3'
 ]
 
-# Parole chiave da cercare
+## Parole chiave da cercare
 keyword = ['parola1', 'parola2', 'parola3']
 
 ▶️ Esecuzione
