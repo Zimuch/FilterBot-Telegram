@@ -34,9 +34,9 @@ Per clonare il progetto **FilterBot** e testarlo localmente, segui i seguenti pa
 
 - Assicurati di avere Git installato sul tuo sistema.
 
-- Python 3.6 o superiore (fino a Python 3.11).
+- Python 3.13 o superiore.
 
-- Le librerie telethon e python-telegram-bot==13.5.
+- Le librerie telethon e python-telegram-bot.
 
 🔹 Clonazione del Repository
 
@@ -49,7 +49,7 @@ Per clonare il progetto **FilterBot** e testarlo localmente, segui i seguenti pa
 
 Installa le librerie necessarie con pip:
 
-    pip install telethon python-telegram-bot==13.5
+    pip install telethon python-telegram-bot
 
 ⚙️ Configurazione
 
@@ -60,7 +60,7 @@ Per configurare correttamente il bot dovrei creare/cercare alcune variabili:
 - BOT_TOKEN
 - MY_CHAT_ID
 
-**Ottenere API_ID e API_HASH**
+**1) Ottenere API_ID e API_HASH**
 
 Per ottenere API_ID e API_HASH da Telegram, devi seguire questi passaggi:
 
@@ -90,7 +90,7 @@ Copia questi valori e conservali in modo sicuro, ti serviranno per configurare i
 
 - È importante notare che queste credenziali sono personali e non dovrebbero essere condivise pubblicamente o incluse direttamente nel codice che carichi su GitHub.
 
-**Creare un bot e ottenere il BOT_TOKEN**
+**2) Creare un bot e ottenere il BOT_TOKEN**
 
 Per creare un bot Telegram e ottenere il relativo token:
 
@@ -112,7 +112,7 @@ Copia questo token e conservalo in modo sicuro
 
 - Il BOT_TOKEN è essenzialmente la "password" del tuo bot e consente al tuo script di inviare messaggi come se fosse il bot. Non condividerlo mai pubblicamente.
 
-**Trovare il tuo MY_CHAT_ID**
+**3) Trovare il tuo MY_CHAT_ID**
 
 Per trovare il tuo ID chat personale su Telegram:
 
