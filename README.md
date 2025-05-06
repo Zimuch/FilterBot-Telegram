@@ -1,5 +1,3 @@
-# [Work In Progess]...
-
 # FilterBot
 ![English](https://img.icons8.com/color/48/great-britain-circular.png) 
 
@@ -155,6 +153,20 @@ Start the bot with the following command:
 
        python bot.py
 
+
+## Contributors
+the project was attended by:
+
+<a href="https://github.com/Zimuch/FilterBot-Telegram/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=Zimuch/FilterBot-Telegram" />
+
+</a>
+
+## Disclaimer
+This project is provided for informational and academic purposes only.
+The author assumes no responsibility for any misuse or damages arising from the use of this software.
+Users are solely responsible for complying with all applicable laws and Telegram's terms of service when using this bot.
+By using this project, you agree that the author is not liable for any consequences resulting from its deployment or operation.
 
 # FilterBot
 ![Italiano](https://img.icons8.com/color/48/italy-circular.png) 
@@ -319,3 +331,9 @@ Al progetto hanno partecipato:
 <img src="https://contrib.rocks/image?repo=Zimuch/FilterBot-Telegram" />
 
 </a>
+
+## Disclaimer
+Questo progetto è fornito a solo scopo informativo e accademico.
+L'autore non si assume alcuna responsabilità per eventuali usi impropri o danni derivanti dall'utilizzo di questo software.
+Gli utenti sono gli unici responsabili del rispetto di tutte le leggi applicabili e dei termini di servizio di Telegram durante l'uso di questo bot.
+Utilizzando questo progetto, l'utente accetta che l'autore non è responsabile per eventuali conseguenze derivanti dal suo utilizzo o funzionamento.
