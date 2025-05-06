@@ -1,7 +1,163 @@
 # [Work In Progess]...
 
 # FilterBot
-Italiano
+![English](https://img.icons8.com/color/48/great-britain-circular.png) 
+
+## Introduction
+**FilterBot** is a bot designed to monitor messages in public Telegram channels searching for specific keywords. When a match is detected, the bot sends a notification to the user with a direct link to the original message.
+
+The project was born from the need to not miss offers, announcements, or relevant discussions within high-volume channels. Instead of manually checking multiple channels, this bot automates the process by filtering only the content that matches your specific interests.
+
+The approach is simple but effective: the bot connects to Telegram using the official API, monitors the specified channels, and reacts only when it finds the user-defined keywords. This allows you to stay updated on specific topics without having to scroll through all messages continuously.
+
+The bot is designed for personal use and respects user privacy, as it monitors only public channels and does not store message contents. It runs in the background and requires minimal configuration to operate.
+
+## Autors
+The project was developed by:
+
+- **Simon Carbone**
+
+## Technologies
+The project was built with the help of:
+
+![Python](https://img.icons8.com/color/48/000000/python.png) **Python** - Programming language used for code development.
+
+![Telegram](https://img.icons8.com/color/48/telegram-app--v5.png) **Telegram** - Messaging app used for communication with the bot.
+
+![Visual Studio Code](https://img.icons8.com/?size=48&id=9OGIyU8hrxW5&format=png&color=000000) **Visual Studio Code** - Text editor and integrated development environment (IDE) used to write, run, and debug the code.
+
+
+## Project
+
+To clone the **FilterBot** project and test it locally, follow these steps: 
+
+📌 Prerequisites
+
+- Make sure Git is installed on your system.
+
+- Python 3.13 or higher.
+
+- The libraries telethon and python-telegram-bot.
+
+🔹  Cloning the Repository
+
+- Open the terminal and type the following command:
+
+  ```bash
+   git clone https://github.com/Zimuch/FilterBot-Telegram.git
+
+📦 Installing dependencies
+
+Install the required libraries with pip:
+
+    pip install telethon python-telegram-bot
+
+⚙️ Configuration
+
+To properly configure the bot you need to create/find some variables:
+
+- API_ID
+- API_HASH
+- BOT_TOKEN
+- MY_CHAT_ID
+
+**1) Obtaining API_ID and API_HASH**
+
+To get API_ID and API_HASH from Telegram, follow these steps:
+
+  Visit the site https://my.telegram.org/apps
+
+  Enter your phone number in international format (e.g. +39xxxxxxxxxx for Italy)
+
+  You will receive a confirmation code via the Telegram app (not SMS)
+
+  After entering the code, you will be redirected to a page where you can create a new application
+
+  Fill out the form with the following information:
+
+  App title: a name of your choice for the application (e.g. "FiltroMessaggiBot")
+
+  Short name: a short name without spaces (e.g. "FiltroMessaggiBot")
+
+  Platform: select "Desktop"
+
+  Description: a short description of your bot
+
+  Click on "Create Application"
+
+  On the next page, you will find both the API_ID (a number) and the API_HASH (an alphanumeric string)
+
+  Copy these values and keep them safe; you will need them to configure the bot
+
+  - It is important to note that these credentials are personal and should not be shared publicly.
+
+**2) Creating a bot and obtaining the BOT_TOKEN**
+
+To create a Telegram bot and get its token:
+
+  Open the Telegram app and search for "@BotFather" (make sure it is the official account with the blue checkmark)
+
+  Start a chat with BotFather and send the command /start
+
+  Send the command /newbot to create a new bot
+
+  BotFather will ask you to choose a name for your bot (it can contain spaces)
+
+  Then you must choose a username for the bot that must end with "bot" (e.g. "filtromessaggibot")
+
+  If the name is available, BotFather will provide you with an access token (BOT_TOKEN)
+
+  The token will look like this: 123456789:ABCdefGhIJKlmNoPQRsTUVwxyZ
+
+  Copy this token and keep it safe
+
+  - The BOT_TOKEN is essentially your bot's "password" and allows your script to send messages as the bot. Never share it publicly.
+    
+**3)  Finding your MY_CHAT_ID**
+
+To find your personal Telegram chat ID:
+
+  Open the Telegram app and search for "@userinfobot" (a bot that provides user information)
+
+  Start a chat with userinfobot and send the command /start
+
+  The bot will immediately reply with your information, including your ID
+
+  The message will look like this:
+
+
+Id: 12345678
+First: [name]
+Last: [surname]
+Username: [username]
+
+  The number after "Id:" is your MY_CHAT_ID
+
+  Copy this number and use it in the bot configuration
+
+  This ID is necessary so the bot knows whom to send notifications to when it finds matches with keywords.
+
+Modify the file FilterBot.py to customize the channels to monitor and the keywords:
+  - To add a channel, simply add the public channel username (without '@') inside the channels variable
+  - To add a keyword, simply add your search word inside the keyword variable
+
+## Channels to monitor (username, without @)
+channels = [
+    'canale1', 'canale2', 'canale3'
+]
+
+## Keywords to search for
+keyword = ['parola1', 'parola2', 'parola3']
+
+▶️ Running the bot
+
+Start the bot with the following command:
+
+       python bot.py
+
+
+# FilterBot
+![Italiano](https://img.icons8.com/color/48/italy-circular.png) 
 
 ## Introduzione
 **FilterBot** è un bot progettato per monitorare i messaggi in canali pubblici di Telegram alla ricerca di parole chiave specifiche. Quando viene rilevata una corrispondenza, il bot invia una notifica all'utente con un link diretto al messaggio originale.
@@ -53,7 +209,7 @@ Installa le librerie necessarie con pip:
 
 ⚙️ Configurazione
 
-Per configurare correttamente il bot dovrei creare/cercare alcune variabili:
+Per configurare correttamente il bot dovrai creare/cercare alcune variabili:
 
 - API_ID
 - API_HASH
@@ -88,7 +244,7 @@ Nella pagina successiva, troverai sia l'API_ID (un numero) che l'API_HASH (una s
 
 Copia questi valori e conservali in modo sicuro, ti serviranno per configurare il bot
 
-- È importante notare che queste credenziali sono personali e non dovrebbero essere condivise pubblicamente o incluse direttamente nel codice che carichi su GitHub.
+- È importante notare che queste credenziali sono personali e non dovrebbero essere condivise pubblicamente.
 
 **2) Creare un bot e ottenere il BOT_TOKEN**
 
@@ -134,7 +290,7 @@ Il numero dopo "Id:" è il tuo MY_CHAT_ID
 
 Copia questo numero e usalo nella configurazione del bot
 
-- Questo ID è necessario affinché il bot sappia a chi inviare le notifiche quando trova corrispondenze con le parole chiave. Nel tuo codice, hai impostato che le notifiche vengano inviate solo al tuo account personale.
+- Questo ID è necessario affinché il bot sappia a chi inviare le notifiche quando trova corrispondenze con le parole chiave.
 
 - Modifica il file FilterBot.py per personalizzare i canali da monitorare e le parole chiave:
    - Per inserire un canale ti basta aggiungere all'interno della variabile **channels** il canale pubblico (tra '')
@@ -153,6 +309,8 @@ keyword = ['parola1', 'parola2', 'parola3']
 Avvia il bot con il seguente comando:
 
        python bot.py
+
+
        
 ## Contributors
 Al progetto hanno partecipato:
